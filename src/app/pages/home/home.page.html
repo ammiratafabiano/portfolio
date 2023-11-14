@@ -16,7 +16,7 @@
 
   <section class="ion-padding">
     <ng-container [ngSwitch]="folder">
-      <app-overview *ngSwitchCase="'home'"></app-overview>
+      <app-overview *ngSwitchCase="'overview'"></app-overview>
       <app-projects *ngSwitchCase="'projects'"></app-projects>
       <app-cv *ngSwitchDefault></app-cv>
     </ng-container>
