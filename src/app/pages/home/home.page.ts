@@ -47,8 +47,8 @@ export class HomePage {
 
   private checkCvVersion() {
     const openingVersion = Number(this.activatedRoute.snapshot.queryParamMap.get('version') as string);
-    if (openingVersion && openingVersion >= environment.cv.version) {
+    /*if (openingVersion && openingVersion >= environment.cv.version) {
 
-    }
+    }*/
   }
 }
