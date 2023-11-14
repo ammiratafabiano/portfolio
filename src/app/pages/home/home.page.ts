@@ -7,13 +7,14 @@ import { OverviewComponent } from 'src/app/components/overview/overview.componen
 import { ProjectsComponent } from 'src/app/components/projects/projects.component';
 import { Section } from 'src/app/models/component';
 import { environment } from 'src/environments/environment';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-folder',
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
   standalone: true,
-  imports: [IonHeader, IonToolbar, IonButtons, IonMenuButton, IonTitle, IonContent, CommonModule, ProjectsComponent, CvComponent, OverviewComponent],
+  imports: [IonHeader, IonToolbar, IonButtons, IonMenuButton, IonTitle, IonContent, CommonModule, ProjectsComponent, CvComponent, OverviewComponent, TranslateModule],
 })
 export class HomePage {
 
@@ -36,11 +37,11 @@ export class HomePage {
     switch (this.folder) {
       default:
       case Section.Overview:
-        return "Overview";
+        return "OVERVIEW.TITLE";
       case Section.Projects:
-        return "Projects";
+        return "PROJECTS.TITLE";
       case Section.Cv:
-        return "Cv";
+        return "CV.TITLE";
     }
   }
 
