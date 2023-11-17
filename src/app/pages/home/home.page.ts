@@ -1,6 +1,6 @@
 import { CommonModule, Location } from '@angular/common';
 import { Component, inject } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { IonHeader, IonToolbar, IonButtons, IonMenuButton, IonTitle, IonContent, IonToast, ToastController, IonIcon, IonAvatar, IonButton, IonFooter } from '@ionic/angular/standalone';
 import { environment } from 'src/environments/environment';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
