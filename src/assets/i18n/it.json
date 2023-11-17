@@ -1,13 +1,17 @@
 {
     "NAME": "Fabiano Ammirata",
-    "PORTFOLIO": "Portfolio",
-    "OVERVIEW": {
-        "TITLE": "Primo piano"
+    "ROLE": "Ingegnere Informatico",
+    "HOME": {
+        "TITLE": "Primo piano",
+        "DESCRIPTION": "Ciao! Sono un Ingegnere Informatico con interesse per il fai da te, la domotica, la sostenibilità e l'apprendimento di nuove tecnologie con l'obiettivo di ampliare le mie conoscenze.",
+        "CV": {
+            "DOWNLOAD": "Scarica il Curriculum",
+            "DOWNLOAD_SHORT": "Scarica",
+            "UPTODATE": "Buone notizie! Hai la versione più aggiornata del curriculum!",
+            "NOT_UPTODATE": "Attenzione, hai una versione datata del curriculum."
+        }
     },
     "PROJECTS": {
         "TITLE": "Progetti"
-    },
-    "CV": {
-        "TITLE": "Cv"
     }
 }

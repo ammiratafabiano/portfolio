@@ -1,0 +1,69 @@
+ion-content,
+ion-header ion-toolbar {
+    --background: var(--ion-background-color, var(--ion-color-secondary));
+}
+
+ion-footer ion-toolbar {
+    --background: var(--ion-background-color, var(--ion-color-primary-contrast));
+
+    .cv-button {
+        margin: 15px;
+    }
+}
+
+.container {
+    background-color: var(--ion-background-color, var(--ion-color-secondary));
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    ion-avatar {
+        margin: 5px auto 0 auto;
+        width: 150px;
+        height: 150px;
+        border: 1px solid var(--ion-color-primary);
+        img {
+            padding: 10px;
+        }
+    }
+    
+    .name {
+        text-align: center;
+        color: var(--ion-text-color, var(--ion-color-primary-shade));
+        font-size: xx-large;
+        font-weight: 300;
+        margin-top: 15px;
+    }
+    
+    .role {
+        text-align: center;
+        color: var(--ion-text-color, var(--ion-color-primary-shade));
+        font-size: x-large;
+        font-weight: 200;
+        margin-top: 10px;
+    }
+    
+    .link-container {
+        margin: 15px 0;
+        display: flex;
+        justify-content: space-evenly;
+        .link-button {
+            width: 30px;
+            height: 30px;
+            border: 1px solid var(--ion-color-primary);
+            border-radius: 100%;
+            padding: 7px;
+            color: var(--ion-color-primary-shade);
+        }
+    }
+    
+    .body {
+        font-size: large;
+        background-color: var(--ion-background-color, var(--ion-color-primary-contrast));
+        height: 100%;
+        
+        .my-info {
+            margin: 15px 0;
+        }
+    }
+}

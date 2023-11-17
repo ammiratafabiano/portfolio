@@ -1,3 +1,8 @@
 export const environment = {
-  production: true
+  production: true,
+  configUrl: "https://ammiratafabiano.dev/config.json",
+  githubUrl: "https://github.com/ammiratafabiano",
+  linkedinUrl: "https://www.linkedin.com/in/fabiano-ammirata",
+  instagramUrl: "https://www.instagram.com/fabiam93",
+  cvUrl: "https://cloud.ammiratafabiano.dev/index.php/s/3crxdEWHAz2Rxn9/download/Fabiano,%20Ammirata_Cv_EN.pdf"
 };

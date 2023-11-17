@@ -1,24 +1,43 @@
-<ion-header [translucent]="true">
+<ion-header class="ion-no-border" [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>{{ title | translate }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">{{ title | translate }}</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <section class="ion-padding">
-    <ng-container [ngSwitch]="folder">
-      <app-overview *ngSwitchCase="'overview'"></app-overview>
-      <app-projects *ngSwitchCase="'projects'"></app-projects>
-      <app-cv *ngSwitchDefault></app-cv>
-    </ng-container>
-  </section>
+  <div class="container">
+    <ion-avatar>
+      <img src="assets/me.jpg" />
+    </ion-avatar>
+    
+    <div class="name">{{ 'NAME' | translate }}</div>
+    <div class="role">{{ 'ROLE' | translate }}</div>
+    
+    <div class="link-container">
+      <ng-container *ngFor="let button of buttons">
+        <ion-icon class="link-button"  slot="icon-only" [name]="button.icon" (click)="openUrl(button.url)"></ion-icon>
+      </ng-container>
+    </div>
+    
+    <section class="body ion-padding">
+      <div class="my-info">
+        {{ 'HOME.DESCRIPTION' | translate }}
+      </div>
+    </section>
+  </div>
+  
+  <ion-toast
+    [isOpen]="false"
+  ></ion-toast>
 </ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button class="cv-button" expand="block" (click)="openCv()">
+      <ion-icon slot="start" name="cloud-download-outline"></ion-icon>
+      {{ 'HOME.CV.DOWNLOAD' | translate }}
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

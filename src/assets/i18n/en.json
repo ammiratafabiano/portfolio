@@ -1,13 +1,17 @@
 {
     "NAME": "Fabiano Ammirata",
-    "PORTFOLIO": "Portfolio",
-    "OVERVIEW": {
-        "TITLE": "Overview"
+    "ROLE": "Software Engineer",
+    "HOME": {
+        "TITLE": "Overview",
+        "DESCRIPTION": "Hi! I am a Computer Engineer with interest for DIY, home automation, sustainability, and learning new technologies with the aim of increasing my knowledge.",
+        "CV": {
+            "DOWNLOAD": "Download CV",
+            "DOWNLOAD_SHORT": "Download",
+            "UPTODATE": "Good news! You have the most up-to-date version of resume!",
+            "NOT_UPTODATE": "Warning, you have an outdated version of resume."
+        }
     },
     "PROJECTS": {
         "TITLE": "Projects"
-    },
-    "CV": {
-        "TITLE": "Cv"
     }
 }

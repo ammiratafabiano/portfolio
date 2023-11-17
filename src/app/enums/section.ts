@@ -1,5 +1,5 @@
 export enum Section {
-    Overview = 'overview',
+    Home = 'home',
     Projects = 'projects',
     Cv = 'cv'
 }

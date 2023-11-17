@@ -14,14 +14,19 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
   imports: [RouterLink, RouterLinkActive, CommonModule, IonApp, IonSplitPane, IonMenu, IonContent, IonList, IonListHeader, IonNote, IonMenuToggle, IonItem, IonIcon, IonLabel, IonRouterOutlet, TranslateModule],
 })
 export class AppComponent {
+
   public appPages = [
-    { title: 'OVERVIEW.TITLE', url: '/overview', icon: 'home' },
-    { title: 'PROJECTS.TITLE', url: '/projects', icon: 'folder' },
-    { title: 'CV.TITLE', url: '/cv', icon: 'document' }
+    { title: 'HOME.TITLE', url: '/', icon: 'home' },
+    { title: 'PROJECTS.TITLE', url: '/projects', icon: 'folder' }
   ];
+
   constructor(private translate: TranslateService) {
+    addIcons({ homeOutline, homeSharp, folderOutline, folderSharp, documentOutline, documentSharp });
+    this.initLanguage();
+  }
+
+  private initLanguage() {
     const currentLang = this.translate.getBrowserLang() || "en";
     this.translate.setDefaultLang(currentLang);
-    addIcons({ homeOutline, homeSharp, folderOutline, folderSharp, documentOutline, documentSharp });
   }
 }
