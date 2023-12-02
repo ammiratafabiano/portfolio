@@ -1,6 +1,6 @@
 # Portfolio App
 
-[DEMO](https://portfolio.ammiratafabiano.dev)
+[DEMO](https://ammiratafabiano.dev)
 
 > :warning: **Work in progress**: You will probably discover bugs inside my life :)
 
