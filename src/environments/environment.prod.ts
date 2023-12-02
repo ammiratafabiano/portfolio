@@ -7,5 +7,15 @@ export const environment = {
   cv: {
     url: "https://cloud.ammiratafabiano.dev/index.php/s/3crxdEWHAz2Rxn9/download/Fabiano,%20Ammirata_Cv_EN.pdf",
     version: 5
-  }
+  },
+  projects: [
+    {
+      title: "",
+      subtitle: "",
+      body: "",
+      backgroundUrl: "",
+      details: "",
+      mediaUrl: ""
+    }
+  ]
 };
