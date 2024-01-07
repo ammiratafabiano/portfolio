@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onBackClicked()">
+        <ion-icon slot="icon-only" name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>{{ 'PROJECTS.DETAIL' | translate }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ 'PROJECTS.DETAIL' | translate }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-chip *ngFor="let el of project?.tags" color="success">{{ 'PROJECTS.TAGS.' + el | translate }}</ion-chip>
+  <ion-chip *ngFor="let el of project?.technologies" color="medium">{{ 'PROJECTS.TECHNOLOGIES.' + el | translate }}</ion-chip>
+  <h1>{{ 'PROJECTS.PROJECT_TITLE.' + project?.id | translate }}</h1>
+  <h4>{{project?.year}}</h4>
+  <h3>{{ 'PROJECTS.PROJECT_SUBTITLE.' + project?.id | translate }}</h3>
+  <div *ngIf="project?.mediaUrl">
+    <a [href]="project?.mediaUrl">{{ 'PROJECTS.MEDIA_URL_LABEL' | translate }}</a>
+  </div>
+  <div *ngIf="project?.githubUrl">
+    <a [href]="project?.githubUrl">{{ 'PROJECTS.GITHUB_URL_LABEL' | translate }}</a>
+  </div>
+  <div *ngIf="project?.demoUrl">
+    <a [href]="project?.demoUrl">{{ 'PROJECTS.DEMO_URL_LABEL' | translate }}</a>
+  </div>
+  <p [innerHTML]="'PROJECTS.PROJECT_DESCRIPTION.' + project?.id | translate"></p>
+</ion-content>

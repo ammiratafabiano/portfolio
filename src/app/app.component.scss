@@ -48,7 +48,7 @@ ion-menu.md ion-item.selected ion-icon {
 }
 
 ion-menu.md ion-item ion-icon {
-  color: #616e7e;
+  color: var(--ion-color-primary);
 }
 
 ion-menu.md ion-item ion-label {
@@ -97,7 +97,7 @@ ion-note {
   display: inline-block;
   font-size: 16px;
 
-  color: var( --ion-text-color, var(--ion-color-medium-shade));
+  color: var(--ion-text-color, var(--ion-color-primary-shade));
 }
 
 ion-item.selected {

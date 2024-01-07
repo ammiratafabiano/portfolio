@@ -1,0 +1,25 @@
+ion-header ion-toolbar {
+    --background: var(--ion-background-color, var(--ion-color-secondary));
+    &.filter-toolbar {
+        padding: 0 20px;
+    }
+    .reset-button {
+        margin-right: 20px;
+    }
+}
+
+ion-chip {
+    font-size: 0.5rem;
+    min-height: 0;
+    padding: 5px;
+}
+
+ion-card {
+    width: 95%;
+    max-width: 300pt;
+    display: inline-block;
+    ion-chip {
+        margin: 5px;
+        margin-bottom: 0;
+    }
+}

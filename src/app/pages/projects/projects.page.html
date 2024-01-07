@@ -4,18 +4,31 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>{{ 'PROJECTS.TITLE' | translate }}</ion-title>
+    <ion-button *ngIf="!(enabledTags.length == 0 && enabledTechnologies.length == 0)" class="reset-button" slot="end" size="small" (click)="resetFilters()">
+      Reset
+    </ion-button>
   </ion-toolbar>
+  <ion-toolbar class="filter-toolbar">{{ 'PROJECTS.TAGS_LABEL' | translate }}<ion-chip (click)="onTagClicked(el)" *ngFor="let el of tags" [color]="isTagSelected(el) ? 'success' : 'light'">{{ 'PROJECTS.TAGS.' + el | translate }}</ion-chip></ion-toolbar>
+  <ion-toolbar class="filter-toolbar">{{ 'PROJECTS.TECHNOLOGIES_LABEL' | translate }}<ion-chip (click)="onTechClicked(el)" *ngFor="let el of technologies" [color]="isTechSelected(el) ? 'medium' : 'light'">{{ 'PROJECTS.TECHNOLOGIES.' + el | translate }}</ion-chip></ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">{{ 'PROJECTS.TITLE' | translate }}</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
   <section class="ion-padding">
-    Work in progress. Come back later!
+
+    <ion-card *ngFor="let item of filteredProjects" (click)="onProjectClicked(item)">
+      <ion-chip *ngFor="let el of item.tags" [color]="isTagSelected(el) ? 'primary' : 'light'">{{ 'PROJECTS.TAGS.' + el | translate }}</ion-chip>
+      <ion-chip *ngFor="let el of item.technologies" [color]="isTechSelected(el) ? 'medium' : 'light'">{{ 'PROJECTS.TECHNOLOGIES.' + el | translate }}</ion-chip>
+      <img *ngIf="item.backgroundUrl" [src]="item.backgroundUrl" />
+      <ion-card-header>
+        <ion-card-subtitle>{{ item.year }}</ion-card-subtitle>
+        <ion-card-title>{{ 'PROJECTS.PROJECT_TITLE.' + item?.id | translate }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        {{ 'PROJECTS.PROJECT_SUBTITLE.' + item?.id | translate }}
+      </ion-card-content>
+    </ion-card>
+
   </section>
   
 </ion-content>

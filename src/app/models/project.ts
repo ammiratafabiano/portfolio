@@ -1,8 +1,10 @@
 export class Project {
-    title!: string;
-    subtitle!: string;
-    body!: string;
+    id!: string;
+    year!: string;
     backgroundUrl?: string;
-    details!: string;
     mediaUrl?: string;
+    githubUrl?: string;
+    demoUrl?: string;
+    tags?: string[];
+    technologies?: string[];
 }
