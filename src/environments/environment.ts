@@ -124,7 +124,7 @@ export const environment = {
     {
       id: "13",
       year: "2023",
-      mediaUrl: "https://cloud.ammiratafabiano.dev/index.php/s/yXgBfnHcTYZDf62",
+      mediaUrl: "",
       githubUrl: "https://github.com/ammiratafabiano/portfolio",
       demoUrl: "https://ammiratafabiano.dev/",
       tags: ["PERSONAL","MEDIA", "DEMO"],

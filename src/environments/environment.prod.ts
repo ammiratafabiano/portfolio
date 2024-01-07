@@ -11,11 +11,7 @@ export const environment = {
   projects: [
     {
       id: "1",
-      title: "PetsGram",
-      subtitle: "A small social network where pet owners share photos and connect with fellow animal enthusiasts.",
       year: "2016",
-      backgroundUrl: "",
-      description: "PetsGram is the result of a collaborative effort within a university team of three individuals. In response to the assignment to develop a dynamic web application, we set out to create a unique platform, and thus, PetsGram was born. This specialized social network is designed exclusively for pet owners, providing them with a dedicated space to showcase the adorable moments of their furry companions.<br>The concept is simple yet delightful – pet owners can seamlessly upload and share photos of their pets, creating a vibrant community centered around the joys of animal companionship. Beyond mere photo-sharing, PetsGram fosters interaction among pet owners, allowing them to connect, exchange experiences, and form a supportive network.<br>Whether it's a heartwarming snapshot of a playful kitten or a majestic photo of a loyal canine companion, PetsGram is the go-to virtual hub for celebrating the diverse and heartening world of pets. Join us in this digital realm tailored for pet enthusiasts, where every upload is a testament to the love and joy that animals bring into our lives.",
       mediaUrl: "https://cloud.ammiratafabiano.dev/index.php/s/9CsrnR4i7G6wrEW",
       githubUrl: "",
       demoUrl: "",
@@ -24,11 +20,7 @@ export const environment = {
     },
     {
       id: "2",
-      title: "Computer Graphics Project",
-      subtitle: "A small description that I have to fill.",
       year: "2017",
-      backgroundUrl: "",
-      description: "A very very very long description that I have to fill.",
       mediaUrl: "https://cloud.ammiratafabiano.dev/index.php/s/yCZ7QCYrnzWmfFB",
       githubUrl: "",
       demoUrl: "",
@@ -37,11 +29,7 @@ export const environment = {
     },
     {
       id: "3",
-      title: "Robotics Project",
-      subtitle: "A small description that I have to fill.",
       year: "2017",
-      backgroundUrl: "",
-      description: "A very very very long description that I have to fill.",
       mediaUrl: "https://cloud.ammiratafabiano.dev/index.php/s/TNNbYmwJipNp9ox?",
       githubUrl: "",
       demoUrl: "",
@@ -50,37 +38,25 @@ export const environment = {
     },
     {
       id: "4",
-      title: "Dashboard",
-      subtitle: "A small description that I have to fill.",
-      year: "2018",
-      backgroundUrl: "",
-      description: "A very very very long description that I have to fill.",
-      mediaUrl: "",
+      year: "2018 - 2019",
+      mediaUrl: "https://cloud.ammiratafabiano.dev/index.php/s/wpTEQsxi2jRmZQp",
       githubUrl: "",
       demoUrl: "",
-      tags: ["JOB"],
-      technologies: ["IONIC", "HTML", "SCSS", "TYPESCRIPT", "NODEJS", "NODERED"]
+      tags: ["JOB", "PAPER"],
+      technologies: ["IONIC", "HTML", "SCSS", "TYPESCRIPT","ANGULAR","CORDOVA", "NODEJS", "NODERED", "PYTHON", "SELENIUM"]
     },
     {
       id: "5",
-      title: "Question Solver",
-      subtitle: "A small description that I have to fill.",
-      year: "2018",
-      backgroundUrl: "",
-      description: "A very very very long description that I have to fill.",
+      year: "2018 - 2019",
       mediaUrl: "",
       githubUrl: "",
       demoUrl: "",
       tags: ["JOB","PERSONAL"],
-      technologies: ["PYTHON"]
+      technologies: ["PYTHON","DBMEDIA","WIKIDATA","SPARQL"]
     },
     {
       id: "6",
-      title: "Loft Finder Bot",
-      subtitle: "A small description that I have to fill.",
       year: "2019",
-      backgroundUrl: "",
-      description: "A very very very long description that I have to fill.",
       mediaUrl: "https://cloud.ammiratafabiano.dev/index.php/s/QxdPXY4e43p3t9S",
       githubUrl: "https://github.com/ammiratafabiano/loft-finder",
       demoUrl: "https://t.me/loft_finder_bot",
@@ -89,37 +65,25 @@ export const environment = {
     },
     {
       id: "7",
-      title: "Financial Mobile App",
-      subtitle: "A small description that I have to fill.",
-      year: "",
-      backgroundUrl: "",
-      description: "A very very very long description that I have to fill.",
+      year: "2019 - 2024",
       mediaUrl: "",
       githubUrl: "",
       demoUrl: "",
-      tags: ["JOB"],
-      technologies: ["IONIC", "HTML", "SCSS", "TYPESCRIPT", "JAVA", "JENKINS","GANDALF","JIRA","CONFLUENCE","BITBUCKET"]
+      tags: ["JOB","DESIGN"],
+      technologies: ["IONIC", "HTML", "SCSS", "TYPESCRIPT","ANGULAR","CORDOVA", "JAVA", "JENKINS","GANDALF","JIRA","CONFLUENCE","BITBUCKET"]
     },
     {
       id: "8",
-      title: "Untivitti",
-      subtitle: "A small description that I have to fill.",
       year: "2020",
-      backgroundUrl: "",
-      description: "A very very very long description that I have to fill.",
       mediaUrl: "https://cloud.ammiratafabiano.dev/index.php/s/Zi2QFoBcTncLE5w",
       githubUrl: "https://github.com/ammiratafabiano/untivitti",
       demoUrl: "https://untivitti.ammiratafabiano.dev/",
       tags: ["PERSONAL","MEDIA","GITHUB","DEMO"],
-      technologies: ["IONIC", "HTML", "SCSS", "TYPESCRIPT"]
+      technologies: ["IONIC", "HTML", "SCSS", "TYPESCRIPT","ANGULAR","CORDOVA"]
     },
     {
       id: "9",
-      title: "Secret Santa Bot",
-      subtitle: "A small description that I have to fill.",
       year: "2021",
-      backgroundUrl: "",
-      description: "A very very very long description that I have to fill.",
       mediaUrl: "https://cloud.ammiratafabiano.dev/index.php/s/NBWabjac65BB9Rr",
       githubUrl: "https://github.com/ammiratafabiano/secret-santa",
       demoUrl: "https://t.me/babbo_natale_segretissimo_bot",
@@ -128,11 +92,7 @@ export const environment = {
     },
     {
       id: "10",
-      title: "Custom Survey",
-      subtitle: "A small description that I have to fill.",
       year: "2021",
-      backgroundUrl: "",
-      description: "A very very very long description that I have to fill.",
       mediaUrl: "https://cloud.ammiratafabiano.dev/index.php/s/4sLPpAzmKqz3fjs",
       githubUrl: "",
       demoUrl: "https://survey.ammiratafabiano.dev/",
@@ -141,11 +101,7 @@ export const environment = {
     },
     {
       id: "11",
-      title: "Movie Palette",
-      subtitle: "A small description that I have to fill.",
       year: "2022",
-      backgroundUrl: "",
-      description: "A very very very long description that I have to fill.",
       mediaUrl: "",
       githubUrl: "",
       demoUrl: "",
@@ -154,55 +110,39 @@ export const environment = {
     },
     {
       id: "12",
-      title: "Car Leave Message",
-      subtitle: "A small description that I have to fill.",
       year: "2023",
-      backgroundUrl: "",
-      description: "A very very very long description that I have to fill.",
       mediaUrl: "https://cloud.ammiratafabiano.dev/index.php/s/tzEn2i54arySxFt",
       githubUrl: "https://github.com/ammiratafabiano/car-leave-message",
       demoUrl: "https://car.ammiratafabiano.dev/",
       tags: ["PERSONAL","MEDIA","DEMO"],
-      technologies: ["IONIC", "HTML", "SCSS", "TYPESCRIPT"]
+      technologies: ["IONIC", "HTML", "SCSS", "TYPESCRIPT","ANGULAR","CAPACITOR"]
     },
     {
       id: "13",
-      title: "Portfolio",
-      subtitle: "A small description that I have to fill.",
       year: "2023",
-      backgroundUrl: "",
-      description: "A very very very long description that I have to fill.",
-      mediaUrl: "https://cloud.ammiratafabiano.dev/index.php/s/yXgBfnHcTYZDf62",
+      mediaUrl: "",
       githubUrl: "https://github.com/ammiratafabiano/portfolio",
       demoUrl: "https://ammiratafabiano.dev/",
       tags: ["PERSONAL","MEDIA", "DEMO"],
-      technologies: ["IONIC", "HTML", "SCSS", "TYPESCRIPT"]
+      technologies: ["IONIC", "HTML", "SCSS", "TYPESCRIPT","ANGULAR","CAPACITOR"]
     },
     {
       id: "14",
-      title: "Food Recipes",
-      subtitle: "A small description that I have to fill.",
-      year: "2023",
-      backgroundUrl: "",
-      description: "A very very very long description that I have to fill.",
+      year: "2023 - 2024",
       mediaUrl: "https://cloud.ammiratafabiano.dev/index.php/s/PMDseMcEiyX5873",
       githubUrl: "https://github.com/ammiratafabiano/food-recipes",
       demoUrl: "http://recipes.ammiratafabiano.dev/",
       tags: ["PERSONAL","DESIGN","MEDIA","DEMO"],
-      technologies: ["IONIC", "HTML", "SCSS", "TYPESCRIPT", "SUPABASE"]
+      technologies: ["IONIC", "HTML", "SCSS", "TYPESCRIPT","ANGULAR","CAPACITOR", "SUPABASE"]
     },
     {
       id: "15",
-      title: "SostenGo",
-      subtitle: "A small description that I have to fill.",
       year: "2024",
-      backgroundUrl: "",
-      description: "A very very very long description that I have to fill.",
       mediaUrl: "",
       githubUrl: "",
       demoUrl: "",
       tags: ["PERSONAL","DESIGN"],
-      technologies: ["IONIC", "HTML", "SCSS", "TYPESCRIPT"]
+      technologies: ["IONIC", "HTML", "SCSS","ANGULAR","CAPACITOR", "TYPESCRIPT"]
     }
   ]
 };
