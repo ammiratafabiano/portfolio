@@ -22,7 +22,7 @@ export class ProjectsPage implements OnInit {
   technologies: string[] = [];
   enabledTechnologies: string[] = [];
 
-
+  minimized = false;
 
   constructor(private router: Router) { }
 
@@ -84,5 +84,17 @@ export class ProjectsPage implements OnInit {
     this.enabledTags = [];
     this.enabledTechnologies = [];
     this.filteredProjects = environment.projects;
+  }
+
+  onContentScroll(event: any) {
+    if (event.currentTarget.detail.deltaY >= 100) {
+      this.minimized = true;
+    } else if (event.detail.scrollTop < 100 || event.currentTarget.detail.deltaY <= -100) {
+      this.minimized = false;
+    }
+  }
+
+  onContentScrollEnd(event: any) {
+
   }
 }

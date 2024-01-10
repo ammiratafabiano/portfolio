@@ -8,11 +8,19 @@
       Reset
     </ion-button>
   </ion-toolbar>
-  <ion-toolbar class="filter-toolbar">{{ 'PROJECTS.TAGS_LABEL' | translate }}<ion-chip (click)="onTagClicked(el)" *ngFor="let el of tags" [color]="isTagSelected(el) ? 'success' : 'light'">{{ 'PROJECTS.TAGS.' + el | translate }}</ion-chip></ion-toolbar>
-  <ion-toolbar class="filter-toolbar">{{ 'PROJECTS.TECHNOLOGIES_LABEL' | translate }}<ion-chip (click)="onTechClicked(el)" *ngFor="let el of technologies" [color]="isTechSelected(el) ? 'medium' : 'light'">{{ 'PROJECTS.TECHNOLOGIES.' + el | translate }}</ion-chip></ion-toolbar>
+  <ion-toolbar class="filter-toolbar">{{ 'PROJECTS.TAGS_LABEL' | translate }}
+    <ng-container *ngFor="let el of tags">
+      <ion-chip *ngIf="(minimized && isTagSelected(el)) || !minimized" (click)="onTagClicked(el)" [color]="isTagSelected(el) ? 'success' : 'light'">{{ 'PROJECTS.TAGS.' + el | translate }}</ion-chip>
+    </ng-container>
+  </ion-toolbar>
+  <ion-toolbar class="filter-toolbar">{{ 'PROJECTS.TECHNOLOGIES_LABEL' | translate }}
+    <ng-container *ngFor="let el of technologies">
+      <ion-chip *ngIf="(minimized && isTechSelected(el)) || !minimized" (click)="onTechClicked(el)" [color]="isTechSelected(el) ? 'medium' : 'light'">{{ 'PROJECTS.TECHNOLOGIES.' + el | translate }}</ion-chip>
+    </ng-container>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" [scrollEvents]="true" (ionScroll)="onContentScroll($event)" (ionScrollEnd)="onContentScrollEnd($event)">
 
   <section class="ion-padding">
 
