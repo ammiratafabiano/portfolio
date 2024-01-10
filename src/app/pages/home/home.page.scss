@@ -73,3 +73,15 @@ ion-footer ion-toolbar {
         }
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    ion-avatar img {
+        content: url("./../../../assets/me-dark.png");
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    ion-avatar img {
+        content: url("./../../../assets/me.png");
+    }
+}
