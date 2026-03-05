@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-import { Section } from './enums/section';
 
 export const routes: Routes = [
   {

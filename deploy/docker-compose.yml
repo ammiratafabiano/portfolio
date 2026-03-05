@@ -1,0 +1,9 @@
+services:
+  portfolio:
+    image: ghcr.io/ammiratafabiano/portfolio:latest
+    container_name: portfolio
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8082:80"
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"

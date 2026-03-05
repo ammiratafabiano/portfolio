@@ -135,7 +135,7 @@ export const environment = {
       year: "2023 - 2024",
       mediaUrl: "https://cloud.ammiratafabiano.dev/index.php/s/PMDseMcEiyX5873",
       githubUrl: "https://github.com/ammiratafabiano/food-recipes",
-      demoUrl: "http://recipes.ammiratafabiano.dev/",
+      demoUrl: "https://recipes.ammiratafabiano.dev/",
       tags: ["PERSONAL","DESIGN","MEDIA","DEMO"],
       technologies: ["IONIC", "HTML", "SCSS", "TYPESCRIPT","ANGULAR","CAPACITOR", "SUPABASE"]
     },
