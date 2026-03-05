@@ -4,7 +4,7 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>{{ 'PROJECTS.TITLE' | translate }}</ion-title>
-    <ion-button *ngIf="!(enabledTags.length == 0 && enabledTechnologies.length == 0)" class="reset-button" slot="end" size="small" (click)="resetFilters()">
+    <ion-button *ngIf="!(enabledTags.length === 0 && enabledTechnologies.length === 0)" class="reset-button" slot="end" size="small" (click)="resetFilters()">
       Reset
     </ion-button>
   </ion-toolbar>
