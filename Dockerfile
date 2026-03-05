@@ -3,6 +3,9 @@ FROM node:18-alpine AS build
 
 WORKDIR /app
 
+# Build dependencies for native Node modules (e.g. @parcel/watcher on ARM)
+RUN apk add --no-cache python3 make g++
+
 # Copy dependency files
 COPY package*.json ./
 
