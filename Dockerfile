@@ -1,16 +1,18 @@
 # Stage 1: Build Angular/Ionic application
-FROM node:18-alpine AS build
+FROM node:18-bookworm-slim AS build
 
 WORKDIR /app
 
-# Build dependencies for native Node modules (e.g. @parcel/watcher on ARM)
-RUN apk add --no-cache python3 make g++
+# Build dependencies for native Node modules on ARM
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends python3 make g++ \
+ && rm -rf /var/lib/apt/lists/*
 
 # Copy dependency files
 COPY package*.json ./
 
-# Install dependencies
-RUN npm install
+# Install dependencies from lockfile (skip optional native deps)
+RUN npm ci --omit=optional
 
 # Copy source code
 COPY . .
